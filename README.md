@@ -19,5 +19,5 @@ source file are located [here](https://github.com/Turnyur/moisture_measuring/tre
 
 * Functional full completed system can be seen below
 
-![alt text](https://github.com/Turnyur/moisture_measuring/blob/master/1a6c901c-5957-44f0-aaaa-befe474a1442.jpgg)
+![alt text](https://github.com/Turnyur/moisture_measuring/blob/master/1a6c901c-5957-44f0-aaaa-befe474a1442.jpg)
 ![alt text](https://github.com/Turnyur/moisture_measuring/blob/master/ea604e3c-2a5e-431c-8b47-461912e6aa72.jpg)
