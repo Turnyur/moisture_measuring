@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="moisture.fxml_moistureController">
+   <children>
+      <ImageView fitHeight="692.0" fitWidth="647.0" pickOnBounds="true">
+         <image>
+            <Image url="@congruent_outline.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="49.0" layoutY="31.0" prefHeight="100.0" prefWidth="566.0" styleClass="proj_title" />
+      <Button id="con_button" fx:id="connect_btn" layoutX="247.0" layoutY="155.0" mnemonicParsing="false" onAction="#handle_connect_btn" text="Connect" />
+      <ComboBox fx:id="COMPortCombo" layoutX="138.0" layoutY="155.0" onAction="#handle_combo" prefHeight="32.0" prefWidth="101.0" />
+      <Label layoutX="70.0" layoutY="158.0" styleClass="text_label" text="Port: " textFill="#a9ebce">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="67.0" prefHeight="27.0" prefWidth="566.0" styleClass="proj_title" text="PC Based Moisture Measuring System" textFill="#f7da16">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <VBox layoutX="47.0" layoutY="212.0" prefHeight="448.0" prefWidth="566.0" styleClass="proj_title">
+         <children>
+            <Label alignment="CENTER" layoutX="400.0" layoutY="400.0" prefHeight="27.0" prefWidth="557.0" text="Real Time Moisture Intensity" textAlignment="RIGHT" textFill="#37d2dd" translateY="60.0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Label fx:id="real_data" alignment="CENTER" focusTraversable="false" prefHeight="27.0" prefWidth="567.0" text="0.00" textFill="#149ce3" translateY="150.0">
+               <font>
+                  <Font size="82.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <HBox fx:id="r_vbox" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="5.0" prefWidth="400.0" styleClass="inflow_data_bg" translateX="90.0" translateY="135.0" />
+            <Label fx:id="con_status" alignment="CENTER" prefHeight="27.0" prefWidth="574.0" text="Diconnected" textFill="#fcf40ed9" translateX="180.0" translateY="150.0">
+               <font>
+                  <Font name="Franklin Gothic Book" size="29.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="myPort" layoutX="431.0" layoutY="194.0" textFill="#6dd7f7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button id="stop_button" fx:id="mstop" layoutX="339.0" layoutY="155.0" mnemonicParsing="false" onAction="#handle_mstop" text="Stop" />
+   </children>
+</AnchorPane>
